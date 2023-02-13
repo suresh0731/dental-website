@@ -230,12 +230,14 @@ function sendEmail(){
   const serviceID = "service_xic4gvt";
   const templateID = "template_nl2ik5k";
 
-  // emailjs.send(serviceID, templateID, params)
-  //   .then(res=>{
-  //       resetformValue();
-  //       alert(`Thanks for the Appointment request. You will get a comfimation mail to ${params.mail_id}`)
-  //   })
-  //   .catch(err=>console.log(err));
+  emailjs.send(serviceID, templateID, params)
+    .then(res=>{
+        resetformValue();
+        alert(`Thanks for the Appointment request. You will get a comfimation mail to ${params.mail_id}`)
+        document.querySelector('.loading').classList.remove('d-block')
+    })
+    .catch(err=>console.log(err));
+  
 }
 
 function resetformValue(){

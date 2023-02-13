@@ -1,9 +1,4 @@
-/**
-* Template Name: Medilab - v4.10.0
-* Template URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 (function() {
   "use strict";
 
@@ -220,3 +215,35 @@
   new PureCounter();
 
 })()
+
+function sendEmail(){
+  var params = {
+    name: document.getElementById("name").value,
+    mail_id: document.getElementById("email").value,
+    mobile_no: document.getElementById("phone").value,
+    appointment_date: document.getElementById("datepicker").value,
+    service: document.getElementById("service").value,
+    doctor: document.getElementById("doctor").value,
+    message: document.getElementById("message").value,
+  };
+  document.querySelector('.loading').classList.add('d-block')
+  const serviceID = "service_xic4gvt";
+  const templateID = "template_nl2ik5k";
+
+  // emailjs.send(serviceID, templateID, params)
+  //   .then(res=>{
+  //       resetformValue();
+  //       alert(`Thanks for the Appointment request. You will get a comfimation mail to ${params.mail_id}`)
+  //   })
+  //   .catch(err=>console.log(err));
+}
+
+function resetformValue(){
+  document.getElementById("name").value = "";
+  document.getElementById("email").value = "";
+  document.getElementById("phone").value = "";
+  document.getElementById("datepicker").value = "";
+  document.getElementById("service").selectedIndex = 0;
+  document.getElementById("doctor").selectedIndex = 0;
+  document.getElementById("message").value = "";
+}

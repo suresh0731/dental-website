@@ -321,7 +321,8 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #1977cc;
+  color: #ffffff;
+  background-color:#1977cc ;
 }
 
 .navbar .dropdown:hover>ul {
@@ -1200,11 +1201,10 @@ section {
   border-radius: 10px;
 }
 
-.doctors .member .pic {
+/* .doctors .member .pic {
   overflow: hidden;
-  width: 180px;
   border-radius: 50%;
-}
+} */
 
 .doctors .member .pic img {
   transition: ease-in-out 0.3s;
@@ -1279,6 +1279,10 @@ section {
 
 .doctors .member .social a+a {
   margin-left: 8px;
+}
+
+.pic > img {
+  width: 180px;
 }
 
 /*--------------------------------------------------------------
@@ -1637,14 +1641,14 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  color: #444444;
+  color: #ffffff;
   font-size: 14px;
-  background: #f1f7fd;
+  background: #1977cc;
 }
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #fff;
+  background: #1977cc;
   box-shadow: 0px 2px 15px rgba(25, 119, 204, 0.1);
 }
 
@@ -1665,13 +1669,13 @@ section {
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Raleway", sans-serif;
-  color: #777777;
+  color: #ffffff;
 }
 
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #444444;
+  color: #292828;
   position: relative;
   padding-bottom: 12px;
 }
@@ -1688,7 +1692,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #1c84e3;
+  color: #000000;
   font-size: 18px;
   line-height: 1;
 }
@@ -1704,7 +1708,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a {
-  color: #777777;
+  color: #ffffff;
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
